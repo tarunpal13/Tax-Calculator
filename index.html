@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tax-calculator-container">
+        <h1>Tax Calculator</h1>
+
+        <label for="baseSalary">Base Salary:</label>
+        <input type="number" id="baseSalary" placeholder="Enter base salary">
+
+        <label for="hra">HRA:</label>
+        <input type="number" id="hra" placeholder="Enter HRA">
+
+        <label for="da">DA:</label>
+        <input type="number" id="da" placeholder="Enter DA">
+
+        <label for="ta">TA:</label>
+        <input type="number" id="ta" placeholder="Enter TA">
+
+        <button onclick="calculateTax()">Calculate Tax</button>
+
+        <div id="result-container">
+            <h2>Total Tax:</h2>
+            <p id="totalTax">0</p>
+        </div>
+    </div>
+
+    <script src="tax_calculator.js"></script>
+</body>
+
+</html>
